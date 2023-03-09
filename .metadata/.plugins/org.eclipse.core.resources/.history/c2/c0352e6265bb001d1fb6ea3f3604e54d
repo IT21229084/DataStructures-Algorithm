@@ -1,9 +1,0 @@
-package linkList;
-
-public class LinkList {
-	
-	private Link First;
-	
-	
-
-}
