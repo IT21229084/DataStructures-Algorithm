@@ -2,7 +2,7 @@
 public class Main_Stack {
 
 	public static void main(String[] args) {
-		
+		//Create Obeject from Stack
 		Stack st = new Stack(5);
 		
 		//Add the values to the Stack
