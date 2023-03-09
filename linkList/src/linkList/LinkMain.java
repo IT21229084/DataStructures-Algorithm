@@ -4,6 +4,7 @@ public class LinkMain {
 
 	public static void main(String[] args) {
 		
+           //Create Object from LinkList class
 		LinkList NW = new LinkList();
 		
 		NW.InsertFirst(10);
