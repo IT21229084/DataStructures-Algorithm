@@ -1,0 +1,10 @@
+package linkList;
+
+public class Link {
+	
+	public int iData;
+	public Link Next;
+	
+	
+
+}

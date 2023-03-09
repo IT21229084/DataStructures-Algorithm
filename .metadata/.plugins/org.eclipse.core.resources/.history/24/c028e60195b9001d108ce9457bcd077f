@@ -1,0 +1,15 @@
+package test;
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		queue q = new queue(5);
+		stack st = new stack(5);
+		
+		
+		
+		
+	}
+
+}

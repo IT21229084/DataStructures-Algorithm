@@ -1,0 +1,21 @@
+package linkList;
+
+public class Links {
+	
+	public int iData;
+	public Links Next;
+	
+	public Links(int iData) {
+		
+		this.iData = iData;
+		Next = null;
+	}
+	
+	public void DisplayLink() {
+		System.out.println("Link Value: "+iData);
+	}
+	
+	
+	
+
+}

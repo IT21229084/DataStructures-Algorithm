@@ -1,0 +1,26 @@
+package linkList;
+
+public class LinkList {
+	
+	private Link First;
+
+	public LinkList(Link first) {
+		
+		First = null;
+	}
+	
+	public void DisplayLinkList() {
+		
+		Link Current = First;
+		
+		while(Current != null) {
+			
+			Current.DisplayLink();
+			Current = Current.Next;
+			
+		}
+	}
+	
+	
+
+}

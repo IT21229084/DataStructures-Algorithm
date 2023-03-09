@@ -1,0 +1,98 @@
+package test;
+
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+//		Scanner sc = new Scanner(System.in);
+//		
+//		queue q = new queue(5);
+//		stack st = new stack(5);
+//		
+//		for (int i =0;i<5;i++) {
+//			System.out.print("Enter value : ");
+//			int n = sc.nextInt();
+//			q.insert(n);
+//			st.push(n);
+//			
+//		}
+//		while(!q.isEmpty()) {
+//			 q.remove();
+//			//st.push(a);
+//		}
+//		
+//		while(!st.isEmpty()) {
+//			int x = st.pop();
+//			q.insert(x);
+//		}
+//		
+//		while(!q.isEmpty()) {
+//			System.out.println("Value = "+q.remove());
+//			
+//		}
+		 queue thecquque = new queue(5);
+
+         stack thestack = new stack(5);
+
+         Scanner forcqueue = new Scanner(System.in);   
+
+         
+
+        // String d = forcqueue.next();
+
+        
+
+         for(int i=0; i<5; i++) {
+        	 
+      
+         System.out.print("Enter the character : ");
+         thecquque.insert(forcqueue.nextInt());
+
+         }
+
+         System.out.println("Ascending order ");
+
+         while(!thecquque.isEmpty()) {
+
+                         int r = thecquque.remove();
+
+                         System.out.println(r);
+
+                         thestack.push(r);
+
+         }
+
+         System.out.println("");
+
+         System.out.println("Disending order ");
+
+         while(!thestack.isEmpty()) {
+
+                         int t = thestack.pop();
+
+                         thecquque.insert(t);
+
+                         System.out.println(t);   
+
+         }
+
+         System.out.println("");
+
+         System.out.println("After store to the queue disending order ");
+
+         while(!thecquque.isEmpty()) {
+
+                         int t = thecquque.remove();
+
+                         System.out.println(t);                   
+
+         }                                             
+
+		
+		
+		
+		
+	}
+
+}

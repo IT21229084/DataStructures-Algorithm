@@ -1,0 +1,39 @@
+package test2;
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		Stack st = new Stack(5);
+		Queue Q = new Queue(10);
+		
+		for (int i = 1;i<=10;i++) {
+			Q.insert(i);
+		}
+		
+	System.out.println("Before.");
+	while(!Q.isEmpty()) {
+		System.out.print(Q.remove()+"  ");
+	}
+	
+//	for(int x = 0;x<5;x++) {
+//		st.push(Q.remove());
+//	}
+//	
+//	while(!st.isEmpty()) {
+//		Q.insert(st.pop());
+//	}
+//	
+//	System.out.println("After.");
+//	 while(!Q.isEmpty()) {
+//		 System.out.print(Q.remove()+"  ");
+//	 }
+//	
+//	
+
+
+		
+
+	}
+
+}

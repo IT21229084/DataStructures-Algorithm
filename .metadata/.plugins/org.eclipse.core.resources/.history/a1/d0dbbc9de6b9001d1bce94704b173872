@@ -1,0 +1,70 @@
+package test;
+
+public class queue {
+	
+
+	private int maxSize;
+	private int rear;
+	private int front;
+	private char[] queArray;
+	private int nItem;
+	
+	public queue(int s) {
+		
+		this.maxSize = s;
+		this.rear = -1;
+		this.front = 0;
+		this.queArray = new char[maxSize];
+		this.nItem = 0;
+	}
+	
+	public boolean isEmpty() {
+		return nItem == 0;
+	}
+	public boolean isFull() {
+		return rear == maxSize - 1;
+	}
+	
+	
+	public void insert(char v){
+		
+		if (isFull()) {
+			System.out.println("Queue is Full");
+		}
+		else {
+			
+			queArray[++rear] = v;
+			nItem++;
+		}
+	}
+	
+	
+	public char remove() {
+		 
+		if (isEmpty()){
+			System.out.println("Queue is Empty");
+			return 'x';	
+		}
+		else {
+			
+			nItem--;
+			return queArray[front++];
+		}
+	}
+	
+
+	public char peekfornt() {
+		 
+		if (isEmpty()){
+			System.out.println("Queue is Empty");
+			return 'z';	
+		}
+		else {
+			
+			return queArray[front];
+		}
+	}
+	
+	
+
+}

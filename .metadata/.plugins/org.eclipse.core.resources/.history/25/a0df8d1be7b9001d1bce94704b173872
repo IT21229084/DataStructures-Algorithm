@@ -1,0 +1,43 @@
+package test;
+
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		Queue q = new Queue(5);
+		Queue q1 = new Queue(5);
+		stack st = new stack(5);
+		
+		for (int i =0;i<5;i++) {
+			System.out.print("Enter value : ");
+			char n = sc.next().charAt(0);
+			q.insert(n);
+		
+		}
+		
+		while(!q.isEmpty()) {
+			 char z = q.remove();
+			st.push(z);
+		}
+		
+
+		while(!st.isEmpty()) {
+			char x = st.pop();
+			q1.insert(x);
+		}
+		System.out.println("\nValues .");
+		while(!q1.isEmpty()) {
+			System.out.print("  "+q1.remove());
+			
+		}
+		
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,14 @@
+package linkList;
+
+public class LinkMain {
+
+	public static void main(String[] args) {
+		
+		LinkList NW = new LinkList();
+		
+		NW.i
+		
+
+	}
+
+}
