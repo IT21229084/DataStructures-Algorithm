@@ -1,5 +1,6 @@
 package linkList;
 
+//Implemets LinkList class from java
 public class LinkList {
 	
 	private Link First;
@@ -9,6 +10,7 @@ public class LinkList {
 		First = null;
 	}
 	
+     //Implement method to Display all the Linklist values
 	public void DisplayLinkList() {
 		
 		Link Current = First;
@@ -22,6 +24,7 @@ public class LinkList {
 		System.out.println(" \n");
 	}
 	
+     //Implement InsertFirst method to add value at Beginning linklist.
 	public void InsertFirst(int Data) {
 		
 		Link newLink = new Link(Data);
@@ -30,12 +33,14 @@ public class LinkList {
 				
 	}
 	
+     //Implement DeleteFirst method to delete value at Beginning linklist.
 	public Link DeleteFirst() {
 		Link Temp = First;
 		First = First.Next;	
 		return Temp;
 	}
 	
+      //Implement Find method to Find value from LinkList
 	public Link Find(int value) {
 		
 		Link Current = First;
@@ -51,6 +56,7 @@ public class LinkList {
 		return null;
 	}
 	
+      //Implement method delete values from LinkList
 	public Link Delete(int data) {
 		
 		Link current = First;
@@ -73,6 +79,7 @@ public class LinkList {
 		return current;
 	}
 	
+     //Implement method Insert values to LinkList
 	public boolean InsertAfter(int key,int Data) {
 		
 		Link current = First;
