@@ -7,7 +7,7 @@ public class Node {
 	public Node rightChild;// Create objects 
 	public Node leftChild;
 	
-	
+	//Display Each node in the Tree
 	public void displayNode() {
 		
 		System.out.println("IData - "+iData);
