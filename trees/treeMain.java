@@ -30,5 +30,28 @@ public class treeMain {
 
 		
 	}
+	private Node findRecursive(Node localRoot, int empno) {
+    	 
+    	 if(localRoot == null) {
+    		 return null;
+  	 }
+  	     else if(localRoot.empNo ==empno) {
+  		 System.out.println(localRoot.empName);
+          		 return localRoot;
+    	 }
+  	     else if (empno <localRoot.empNo) {
+  	    	 return findRecursive(localRoot.leftChild,empno);
+  	     }else {
+  	    	return findRecursive(localRoot.rightChild,empno);
+  	    	 
+  	     }
+    	 
+     }
+	 public void deleteAll() {
+    	 root = null;
+     }
+	 public void traversepreorder() {
+		 preOrder(root);
+	}
 
 }
