@@ -27,8 +27,7 @@ public class treeMain {
 		t.ascendingOrder(t.root);
 		
 		
-
-		
 	}
+	
 
 }
