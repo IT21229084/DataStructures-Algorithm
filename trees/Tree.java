@@ -154,3 +154,56 @@ public class Tree {
 	
 
 }
+
+
+
+private Node findRecursive(Node localRoot, int empno) {
+    	 
+    	 if(localRoot == null) {
+    		 return null;
+  	 }
+  	     else if(localRoot.empNo ==empno) {
+  		 System.out.println(localRoot.empName);
+          		 return localRoot;
+    	 }
+  	     else if (empno <localRoot.empNo) {
+  	    	 return findRecursive(localRoot.leftChild,empno);
+  	     }else {
+  	    	return findRecursive(localRoot.rightChild,empno);
+  	    	 
+  	     }
+    	 
+     }
+
+        
+      //Delete all node in the tree
+	 public void deleteAll() {
+    	 root = null;
+     }
+
+
+
+     
+	 public void traversepreorder() {
+		 preOrder(root);
+	}
+
+
+       
+       public void traversepostOrder() {
+		 postOrder(root);
+	}
+
+
+      
+      public void traverseinOrder() {
+		 inOrder(root);
+	}
+
+
+
+
+
+
+
+
