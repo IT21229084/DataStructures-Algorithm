@@ -1,7 +1,7 @@
 
 public class Tree {
 
-	public Node root;// 
+	public Node root;
 	
 	Tree(){
 		root = null;
@@ -69,7 +69,7 @@ public class Tree {
 	}
 	
 	
-	// .......Implement Traversing Method.......
+	// ..........Implement Traversing Method.......
 	private void inOrder(Node localRoot) {
 		
 		if (localRoot != null) {
