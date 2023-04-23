@@ -7,7 +7,7 @@ public class Tree {
 		root = null;
 	}
 	
-	//Implement Find method
+	//Implement Find method using key
 	public Node Find(int key) {
 		
 		Node Current = root;
