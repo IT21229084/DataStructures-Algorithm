@@ -12,7 +12,7 @@ public class Tree {
 		
 		Node Current = root;
 		
-		//Find the key value 
+		//Find the key values 
 		while(!(Current.iData == key)) {
 			
 			if (key < Current.dData) {
